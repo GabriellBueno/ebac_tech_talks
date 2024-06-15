@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -20,10 +21,74 @@
         <div class="conteiner">
             <img class="hero__logo" src="images/ebac_logo.svg" alt="">
             <p class="hero__text">
-                O maior evento de Tecnologia do Brasil começa em 10D 12H 20M 15S</p>
+                O maior evento de Tecnologia do Brasil começa em <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2022 ás 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua Vaga
+                </a>
+            </div>
         </div>
     </header>
-
+    <section class="event event--frontend">
+        <div class="conteiner" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio magnam quae nisi vel? Perspiciatis ut possimus sit, cumque doloremque esse aspernatur qui eius vero id, voluptatibus dolore commodi et.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left" >
+        <div class="conteiner" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio magnam quae nisi vel? Perspiciatis ut possimus sit, cumque doloremque esse aspernatur qui eius vero id, voluptatibus dolore commodi et.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="conteiner" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio magnam quae nisi vel? Perspiciatis ut possimus sit, cumque doloremque esse aspernatur qui eius vero id, voluptatibus dolore commodi et.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="conteiner" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio magnam quae nisi vel? Perspiciatis ut possimus sit, cumque doloremque esse aspernatur qui eius vero id, voluptatibus dolore commodi et.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
